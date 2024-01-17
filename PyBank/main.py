@@ -39,7 +39,7 @@ print(f"Greatest Decrease in Profits: {greatest_decrease['month']}(${greatest_de
 
 
 
-csvpath = os.path.join("Resources", "analysis")
+csvpath = os.path.join("analysis")
 with open(csvpath, "w") as text_file:
     print("Financial Analysis", file = text_file)
     print("---------------------------", file = text_file)
@@ -48,6 +48,6 @@ with open(csvpath, "w") as text_file:
     print(f"Average Change: ${average}", file = text_file)
     print(f"Greatest Increase in Profits: {greatest_increase['month']}(${greatest_increase['change']})", file = text_file)
     print(f"Greatest Decrease in Profits: {greatest_decrease['month']}(${greatest_decrease['change']})", file = text_file)
-    
+
 
 
